@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/act_main_tv_kullanici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Kullanıcı bilgisi yükleniyor.."
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/act_main_tv_urun_var_mi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ürün bilgisi yükleniyor.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/act_main_tv_kullanici"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/act_main_btn_urun_satin_al"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/act_main_tv_urun_var_mi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Ürün Satın Al"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:paddingHorizontal="30dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <Switch
+        android:id="@+id/act_main_switch_otomatik_satin_al"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Otomatik Satın Al Yükleniyor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/act_main_btn_urun_satin_al"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/act_main_tv_bakiye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/act_main_switch_otomatik_satin_al"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Bakiye bilgisi yükleniyor.."
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        />
+
+</android.support.constraint.ConstraintLayout>
